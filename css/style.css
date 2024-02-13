@@ -5,10 +5,12 @@
   font-family: MainFont;
   scroll-behavior: smooth;
 }
+
 @font-face {
   font-family: MainFont;
   src: url(Fonts/IRANYekanRegular.woff);
 }
+
 div.head {
   width: 100%;
   height: 60px;
@@ -16,10 +18,12 @@ div.head {
   top: 0;
   z-index: 100;
 }
+
 .head img {
   width: 100%;
   height: 100%;
 }
+
 .head2 {
   width: 100%;
   height: 68px;
@@ -32,11 +36,14 @@ div.head {
   z-index: 100;
   background-color: #fff;
 }
+
 div.head2 > div.logo {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
+
 div.head2 > div.logo > input#search {
   width: 600px;
   height: 44px;
@@ -48,52 +55,78 @@ div.head2 > div.logo > input#search {
   padding-right: 22px;
   font-size: 13px;
 }
+
 div.head2 > div.logo > span.fas {
   position: absolute;
   right: 160px;
   color: #a1a3a8;
 }
+
 div.head2 > div.logo > div.icons {
   display: flex;
   width: 200px;
   height: 40px;
   margin-right: 610px;
 }
+
 div.head2 > div.logo > div.icons > a {
   font-size: 20px;
   margin: 0 11px;
   line-height: 40px;
   color: #a1a3a8;
 }
+
 div.head2 > div.logo > div.icons > span.ha {
   border-right: 1px solid #a1a3a8;
   font-size: 0px;
   margin: 0 10px;
 }
+
 div.head2 > div.logo > div.icons > a > span.fas.fa-shopping-cart {
   transition: all 300ms ease;
 }
+
 div.head2 > div.logo > div.icons > a > span.fas.fa-user {
   transition: all 300ms ease;
 }
+
 div.head2 > div.logo > div.icons > a > span.fas.fa-shopping-cart:hover {
   transform: translateY(-10px);
   color: black;
 }
+
 div.head2 > div.logo > div.icons > a > span.fas.fa-user:hover {
   transform: translateY(-10px);
   color: black;
 }
+
 div.menu {
   width: 100%;
   height: 40px;
   padding: 0 16px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  border-bottom: 2px solid gainsboro;
 }
-div.menu > div.item0>div.submenu{
+
+div.menu > div.right {
+  width: 70%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+div.menu > div.left {
+  width: 20%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.menu > div.item0 > div.submenu {
   width: 1128px;
   height: 0;
   background-color: white;
@@ -109,7 +142,8 @@ div.menu > div.item0>div.submenu{
   direction: rtl;
   position: relative;
 }
-div.menu > div.item0>div.submenu>div.right{
+
+div.menu > div.item0 > div.submenu > div.right {
   width: 200px;
   height: 540px;
   display: flex;
@@ -117,7 +151,8 @@ div.menu > div.item0>div.submenu>div.right{
   overflow: auto;
   direction: rtl;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi{
+
+div.menu > div.item0 > div.submenu > div.right > div.smi {
   width: 195px;
   height: 52px;
   padding: 12px 8px;
@@ -125,41 +160,49 @@ div.menu > div.item0>div.submenu>div.right>div.smi{
   display: flex;
   direction: rtl;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi:hover>a{
+
+div.menu > div.item0 > div.submenu > div.right > div.smi:hover > a {
   color: red;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi:hover{
+
+div.menu > div.item0 > div.submenu > div.right > div.smi:hover {
   background-color: #ffffff;
   border-top: 1px solid gainsboro;
   border-bottom: 1px solid gainsboro;
 }
-div.menu > div.item0>div.submenu>div.right::-webkit-scrollbar{
+
+div.menu > div.item0 > div.submenu > div.right::-webkit-scrollbar {
   width: 5px;
 }
-div.menu > div.item0>div.submenu>div.right::-webkit-scrollbar-thumb{
+
+div.menu > div.item0 > div.submenu > div.right::-webkit-scrollbar-thumb {
   background-color: #888;
 }
-div.menu > div.item0>div.submenu>div.right::-webkit-scrollbar-track{
+
+div.menu > div.item0 > div.submenu > div.right::-webkit-scrollbar-track {
   background-color: #f1f1f1;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>a>img{
+
+div.menu > div.item0 > div.submenu > div.right > div.smi > a > img {
   width: 20px;
   height: 20px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>a{
+div.menu > div.item0 > div.submenu > div.right > div.smi > a {
   width: 100%;
   height: 100%;
   display: flex;
   text-decoration: none;
   font-size: 12px;
-  color: #3F4064;
+  color: #3f4064;
   align-items: center;
   gap: 10px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi:hover>div.items{
+
+div.menu > div.item0 > div.submenu > div.right > div.smi:hover > div.items {
   visibility: visible;
 }
-div.menu>div.item0>div.submenu>div.right>div.smi>div.items{
+
+div.menu > div.item0 > div.submenu > div.right > div.smi > div.items {
   width: 928px;
   height: 540px;
   padding: 20px 20px 0 20px;
@@ -172,28 +215,70 @@ div.menu>div.item0>div.submenu>div.right>div.smi>div.items{
   top: 0;
   visibility: hidden;
 }
-div.menu>div.item0>div.submenu>div.right>div.smi>div.items::-webkit-scrollbar{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items::-webkit-scrollbar {
   width: 5px;
 }
-div.menu>div.item0>div.submenu>div.right>div.smi>div.items::-webkit-scrollbar-thumb{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items::-webkit-scrollbar-thumb {
   background-color: #888;
 }
-div.menu>div.item0>div.submenu>div.right>div.smi>div.items::-webkit-scrollbar-track{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items::-webkit-scrollbar-track {
   background-color: #f1f1f1;
 }
-div.menu>div.item0>div.submenu>div.right>div.smi>div.items>div.bodi{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi {
   width: 880px;
   display: flex;
   direction: rtl;
   position: relative;
 }
-div.menu>div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.radif1{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.radif1 {
   width: 220px;
   display: flex;
   flex-flow: column;
   align-items: flex-start;
 }
-div.menu>div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.radif1>a.top{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.radif1
+  > a.top {
   width: 220px;
   height: 30px;
   text-decoration: none;
@@ -202,11 +287,30 @@ div.menu>div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.radif1>a
   line-height: 10px;
   margin-bottom: 15px;
 }
-div.menu>div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.radif1>a.top:hover>span.top{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.radif1
+  > a.top:hover
+  > span.top {
   color: red;
 }
 
-div.menu>div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.radif1>a.top>span.top{
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.radif1
+  > a.top
+  > span.top {
   width: 220px;
   height: 30px;
   font-size: 14px;
@@ -216,11 +320,31 @@ div.menu>div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.radif1>a
   font-weight: 600;
   line-height: 10px;
 }
-div.menu>div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.radif1>a.top>span.top>img{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.radif1
+  > a.top
+  > span.top
+  > img {
   width: 16px;
-  height: 16px
+  height: 16px;
 }
-div.menu>div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.radif1>a{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.radif1
+  > a {
   text-decoration: none;
   width: 220px;
   height: 26px;
@@ -230,169 +354,719 @@ div.menu>div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.radif1>a
   flex-flow: column;
   line-height: 40px;
 }
-div.menu>div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.radif1>a>span{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.radif1
+  > a
+  > span {
   font-size: 12px;
-  color: #81858B;
+  color: #81858b;
   padding-right: 5px;
   line-height: 35px;
 }
-div.menu>div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.radif1>a:hover>span{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.radif1
+  > a:hover
+  > span {
   color: red;
 }
-div.menu>div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.radif1>a>span:not(:hover){
-  color: #81858B;
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.radif1
+  > a
+  > span:not(:hover) {
+  color: #81858b;
 }
-div.menu>div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot1{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot1 {
   position: absolute;
   left: 440px;
   top: 300px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot2{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot2 {
   position: absolute;
   left: 220px;
   top: 270px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot3{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot3 {
   position: absolute;
   left: 220px;
   top: 530px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot4{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot4 {
   position: absolute;
   left: 220px;
   top: 830px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot5{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot5 {
   position: absolute;
   left: 440px;
   top: 710px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot6{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot6 {
   position: absolute;
   left: 440px;
   top: 975px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot7{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot7 {
   position: absolute;
   left: 440px;
   top: 340px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot8{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot8 {
   position: absolute;
   left: 220px;
   top: 240px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot9{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot9 {
   position: absolute;
   left: 220px;
   top: 580px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot10{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot10 {
   position: absolute;
   right: 0;
   top: 340px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot11{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot11 {
   position: absolute;
   left: 440px;
   top: 390px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot12{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot12 {
   position: absolute;
   left: 0;
   top: 200px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot13{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot13 {
   position: absolute;
   right: 0;
   top: 540px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot14{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot14 {
   position: absolute;
   right: 0;
   top: 700px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot15{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot15 {
   position: absolute;
   right: 0;
   top: 870px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot16{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot16 {
   position: absolute;
   right: 0;
   top: 1140px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot17{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot17 {
   position: absolute;
   right: 0;
   top: 1310px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot18{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot18 {
   position: absolute;
   right: 0;
   top: 1410px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot19{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot19 {
   position: absolute;
   right: 0;
   top: 1540px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot20{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot20 {
   position: absolute;
   right: 0;
   top: 1640px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot21{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot21 {
   position: absolute;
   right: 0;
   top: 1950px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot22{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot22 {
   position: absolute;
   right: 0;
   top: 2150px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot23{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot23 {
   position: absolute;
   left: 440px;
   top: 660px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot24{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot24 {
   position: absolute;
   left: 440px;
   top: 1000px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot25{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot25 {
   position: absolute;
   left: 440px;
   top: 1160px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot26{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot26 {
   position: absolute;
   left: 440px;
   top: 1330px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot27{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot27 {
   position: absolute;
   left: 440px;
   top: 1600px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot28{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot28 {
   position: absolute;
   left: 220px;
   top: 960px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot29{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot29 {
   position: absolute;
   left: 220px;
   top: 1130px;
 }
-div.menu > div.item0>div.submenu>div.right>div.smi>div.items>div.bodi>div.flot30{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot30 {
   position: absolute;
   left: 0;
   top: 790px;
 }
-div.menu>div.item0>div.submenu>div.right>div.smi>div.items>div.header{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot31 {
+  position: absolute;
+  right: 0;
+  top: 60px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot32 {
+  position: absolute;
+  right: 0;
+  top: 230px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot33 {
+  position: absolute;
+  right: 0;
+  top: 570px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot34 {
+  position: absolute;
+  right: 0;
+  top: 840px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot35 {
+  position: absolute;
+  right: 0;
+  top: 1250px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot36 {
+  position: absolute;
+  right: 0;
+  top: 1870px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot37 {
+  position: absolute;
+  left: 440px;
+  top: 60px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot38 {
+  position: absolute;
+  left: 440px;
+  top: 370px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot39 {
+  position: absolute;
+  left: 440px;
+  top: 510px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot40 {
+  position: absolute;
+  left: 440px;
+  top: 720px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot41 {
+  position: absolute;
+  left: 440px;
+  top: 1100px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot42 {
+  position: absolute;
+  left: 440px;
+  top: 1270px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot43 {
+  position: absolute;
+  left: 440px;
+  top: 1440px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot44 {
+  position: absolute;
+  left: 220px;
+  top: 60px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot45 {
+  position: absolute;
+  left: 220px;
+  top: 330px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot46 {
+  position: absolute;
+  left: 220px;
+  top: 740px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot47 {
+  position: absolute;
+  left: 220px;
+  top: 1120px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot48 {
+  position: absolute;
+  left: 220px;
+  top: 1330px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot49 {
+  position: absolute;
+  left: 0;
+  top: 60px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot50 {
+  position: absolute;
+  left: 0;
+  top: 220px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.bodi
+  > div.flot51 {
+  position: absolute;
+  left: 0;
+  top: 450px;
+}
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.header {
   display: flex;
   width: 880px;
   height: 26px;
@@ -400,28 +1074,57 @@ div.menu>div.item0>div.submenu>div.right>div.smi>div.items>div.header{
   direction: rtl;
   align-items: center;
 }
-div.menu>div.item0>div.submenu>div.right>div.smi>div.items>div.header>a{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.header
+  > a {
   text-decoration: none;
   display: flex;
   align-items: center;
 }
-div.menu>div.item0>div.submenu>div.right>div.smi>div.items>div.header>a>img{
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.header
+  > a
+  > img {
   width: 16px;
   height: 16px;
 }
-div.menu>div.item0>div.submenu>div.right>div.smi>div.items>div.header>a>span{
-  color: #008EB2;
-  font-size: 12px
+
+div.menu
+  > div.item0
+  > div.submenu
+  > div.right
+  > div.smi
+  > div.items
+  > div.header
+  > a
+  > span {
+  color: #008eb2;
+  font-size: 12px;
 }
+
 div.menu > div.item0 {
-  width: 142px;
+  width: 120px;
   height: 40px;
   text-align: center;
   line-height: 40px;
   transition: all 100ms ease-in;
   transform-origin: 0% 50%;
   position: relative;
+  margin-left: 15px;
 }
+
 div.menu > div.item0 > a {
   width: 100%;
   height: 100%;
@@ -430,25 +1133,29 @@ div.menu > div.item0 > a {
   color: #3f4064;
   text-decoration: none;
 }
-div.menu > div.item0:hover>div.submenu{
+
+div.menu > div.item0:hover > div.submenu {
   height: 540px;
 }
-div.menu > div.item0::after{
-  content: '';
+
+div.menu > div.item0::after {
+  content: "";
   display: block;
   width: 0;
   height: 3px;
   position: absolute;
   top: 37px;
   background: crimson;
-  transition: width .3s;
+  transition: width 0.3s;
 }
+
 div.menu > div.item0:hover::after {
-  width: 93%;
-  transition: width .3s;
+  width: 100%;
+  transition: width 0.3s;
 }
-div.menu > div.item1 {
-  width: 116px;
+
+div.menu > div.right > div.item1 {
+  width: 11%;
   height: 40px;
   text-align: center;
   line-height: 40px;
@@ -456,21 +1163,24 @@ div.menu > div.item1 {
   transition: all 100ms ease-in;
   position: relative;
 }
-div.menu > div.item1::after{
-  content: '';
+
+div.menu > div.right > div.item1::after {
+  content: "";
   display: block;
   width: 0;
   height: 3px;
   position: absolute;
   top: 37px;
   background: crimson;
-  transition: width .3s;
+  transition: width 0.3s;
 }
-div.menu > div.item1:hover::after {
+
+div.menu > div.right > div.item1:hover::after {
   width: 76%;
-  transition: width .3s;
+  transition: width 0.3s;
 }
-div.menu > div.item1 > a {
+
+div.menu > div.right > div.item1 > a {
   width: 100%;
   height: 100%;
   display: block;
@@ -478,11 +1188,13 @@ div.menu > div.item1 > a {
   color: #62666d;
   text-decoration: none;
 }
-div.menu > div.item1 > a > span {
+
+div.menu > div.right > div.item1 > a > span {
   margin-left: 5px;
 }
-div.menu > div.item2 {
-  width: 101px;
+
+div.menu > div.right > div.item2 {
+  width: 11%;
   height: 40px;
   text-align: center;
   line-height: 40px;
@@ -490,21 +1202,24 @@ div.menu > div.item2 {
   transition: all 100ms ease-in;
   position: relative;
 }
-div.menu > div.item2::after{
-  content: '';
+
+div.menu > div.right > div.item2::after {
+  content: "";
   display: block;
   width: 0;
   height: 3px;
   position: absolute;
   top: 37px;
   background: crimson;
-  transition: width .3s;
+  transition: width 0.3s;
 }
-div.menu > div.item2:hover::after {
+
+div.menu > div.right > div.item2:hover::after {
   width: 78%;
-  transition: width .3s;
+  transition: width 0.3s;
 }
-div.menu > div.item2 > a {
+
+div.menu > div.right > div.item2 > a {
   width: 100%;
   height: 100%;
   display: block;
@@ -512,11 +1227,13 @@ div.menu > div.item2 > a {
   color: #62666d;
   text-decoration: none;
 }
-div.menu > div.item2 > a > span {
+
+div.menu > div.right > div.item2 > a > span {
   margin-left: 5px;
 }
-div.menu > div.item3 {
-  width: 101px;
+
+div.menu > div.right > div.item3 {
+  width: 11%;
   height: 40px;
   text-align: center;
   line-height: 40px;
@@ -524,21 +1241,24 @@ div.menu > div.item3 {
   transition: all 100ms ease-in;
   position: relative;
 }
-div.menu > div.item3::after{
-  content: '';
+
+div.menu > div.right > div.item3::after {
+  content: "";
   display: block;
   width: 0;
   height: 3px;
   position: absolute;
   top: 37px;
   background: crimson;
-  transition: width .3s;
+  transition: width 0.3s;
 }
-div.menu > div.item3:hover::after {
+
+div.menu > div.right > div.item3:hover::after {
   width: 77%;
-  transition: width .3s;
+  transition: width 0.3s;
 }
-div.menu > div.item3 > a {
+
+div.menu > div.right > div.item3 > a {
   width: 100%;
   height: 100%;
   display: block;
@@ -546,11 +1266,13 @@ div.menu > div.item3 > a {
   color: #62666d;
   text-decoration: none;
 }
-div.menu > div.item3 > a > span {
+
+div.menu > div.right > div.item3 > a > span {
   margin-left: 5px;
 }
-div.menu > div.item4 {
-  width: 120px;
+
+div.menu > div.right > div.item4 {
+  width: 12%;
   height: 40px;
   text-align: center;
   line-height: 40px;
@@ -558,21 +1280,24 @@ div.menu > div.item4 {
   transition: all 100ms ease-in;
   position: relative;
 }
-div.menu > div.item4::after{
-  content: '';
+
+div.menu > div.right > div.item4::after {
+  content: "";
   display: block;
   width: 0;
   height: 3px;
   position: absolute;
   top: 37px;
   background: crimson;
-  transition: width .3s;
+  transition: width 0.3s;
 }
-div.menu > div.item4:hover::after {
+
+div.menu > div.right > div.item4:hover::after {
   width: 80%;
-  transition: width .3s;
+  transition: width 0.3s;
 }
-div.menu > div.item4 > a {
+
+div.menu > div.right > div.item4 > a {
   width: 100%;
   height: 100%;
   display: block;
@@ -580,11 +1305,13 @@ div.menu > div.item4 > a {
   color: #62666d;
   text-decoration: none;
 }
-div.menu > div.item4 > a > span {
+
+div.menu > div.right > div.item4 > a > span {
   margin-left: 5px;
 }
-div.menu > div.item5 {
-  width: 160px;
+
+div.menu > div.right > div.item5 {
+  width: 16%;
   height: 40px;
   text-align: center;
   line-height: 40px;
@@ -592,21 +1319,24 @@ div.menu > div.item5 {
   transition: all 100ms ease-in;
   position: relative;
 }
-div.menu > div.item5::after{
-  content: '';
+
+div.menu > div.right > div.item5::after {
+  content: "";
   display: block;
   width: 0;
   height: 3px;
   position: absolute;
   top: 37px;
   background: crimson;
-  transition: width .3s;
+  transition: width 0.3s;
 }
-div.menu > div.item5:hover::after {
+
+div.menu > div.right > div.item5:hover::after {
   width: 84%;
-  transition: width .3s;
+  transition: width 0.3s;
 }
-div.menu > div.item5 > a {
+
+div.menu > div.right > div.item5 > a {
   width: 100%;
   height: 100%;
   display: block;
@@ -614,33 +1344,39 @@ div.menu > div.item5 > a {
   color: #62666d;
   text-decoration: none;
 }
-div.menu > div.item5 > a > span {
+
+div.menu > div.right > div.item5 > a > span {
   margin-left: 5px;
 }
-div.menu > div.item6 {
-  width: 89px;
+
+div.menu > div.right > div.item6 {
+  width: 7%;
   height: 40px;
   text-align: center;
   line-height: 40px;
   padding: 0 12px;
   transition: all 100ms ease-in;
   position: relative;
+  margin-right: 15px;
 }
-div.menu > div.item6::after{
-  content: '';
+
+div.menu > div.right > div.item6::after {
+  content: "";
   display: block;
   width: 0;
   height: 3px;
   position: absolute;
   top: 37px;
   background: crimson;
-  transition: width .3s;
+  transition: width 0.3s;
 }
-div.menu > div.item6:hover::after {
+
+div.menu > div.right > div.item6:hover::after {
   width: 74%;
-  transition: width .3s;
+  transition: width 0.3s;
 }
-div.menu > div.item6 > a {
+
+div.menu > div.right > div.item6 > a {
   width: 100%;
   height: 100%;
   display: block;
@@ -648,8 +1384,9 @@ div.menu > div.item6 > a {
   color: #62666d;
   text-decoration: none;
 }
-div.menu > div.item7 {
-  width: 131px;
+
+div.menu > div.right > div.item7 {
+  width: 13%;
   height: 40px;
   text-align: center;
   line-height: 40px;
@@ -657,21 +1394,24 @@ div.menu > div.item7 {
   transition: all 100ms ease-in;
   position: relative;
 }
-div.menu > div.item7::after{
-  content: '';
+
+div.menu > div.right > div.item7::after {
+  content: "";
   display: block;
   width: 0;
   height: 3px;
   position: absolute;
   top: 37px;
   background: crimson;
-  transition: width .3s;
+  transition: width 0.3s;
 }
-div.menu > div.item7:hover::after {
+
+div.menu > div.right > div.item7:hover::after {
   width: 80%;
-  transition: width .3s;
+  transition: width 0.3s;
 }
-div.menu > div.item7 > a {
+
+div.menu > div.right > div.item7 > a {
   width: 100%;
   height: 100%;
   display: block;
@@ -679,38 +1419,42 @@ div.menu > div.item7 > a {
   color: #62666d;
   text-decoration: none;
 }
-div.menu > div.loc {
-  width: 130px;
+
+div.menu > div.left > div.loc {
+  width: 100%;
   height: 40px;
   padding: 0 0 4px;
-  margin-right: 450px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
+  margin-right: 70px;
 }
-div.menu>div.loc::after{
+
+div.menu > div.left > div.loc::after {
   content: "ارسال به تهران ، تهران";
-  display: block; 
+  display: block;
   width: 127px;
   height: 0;
-  background-color: #3F4064;
+  background-color: #3f4064;
   position: absolute;
   top: 40px;
   z-index: 999;
-  left: -3px;
+  left: 10px;
   border-radius: 5px;
   overflow: hidden;
   text-align: center;
   line-height: 36px;
   font-size: 12px;
 }
-div.menu>div.loc:hover::after{
+
+div.menu > div.left > div.loc:hover::after {
   height: 40px;
   color: white;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
-div.menu > div.loc > a {
+
+div.menu > div.left > div.loc > a {
   width: 130px;
   height: 26px;
   display: block;
@@ -719,23 +1463,27 @@ div.menu > div.loc > a {
   text-decoration: none;
   line-height: 30px;
 }
-div.menu > div.loc > span {
+
+div.menu > div.left > div.loc > span {
   font-size: 15px;
-  margin-left: 5px;
+  margin-right: 30px;
   color: #62666d;
 }
-div.menu > span.khat {
+
+div.menu > div.right > span.khat {
   font-size: 25px;
   margin-bottom: 5px;
   color: rgba(0, 0, 0, 0.377);
   opacity: 0.5;
   user-select: none;
 }
+
 .swiper {
   width: 100%;
   height: 400px;
   position: relative;
 }
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -744,53 +1492,63 @@ div.menu > span.khat {
   justify-content: center;
   align-items: center;
 }
+
 .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.swiper>div.buttons>div.swiper-button-prev{
-  width: 45px;
-  height: 45px;
-  background-color: gainsboro;
+
+.swiper > div.buttons > div.swiper-button-pre {
+  width: 38px;
+  height: 38px;
+  background-color: white;
   border-radius: 50%;
   position: absolute;
   z-index: 999;
-  top: 360px;
-  left: 93%;
-  color: grey;
-  padding-right: 10px;
+  top: 350px;
+  right: 70px;
   outline: 1px solid grey;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(180deg);
+  cursor: pointer;
+  padding-left: 2px;
 }
-.swiper>div.buttons>div.swiper-button-next{
-  width: 45px;
-  height: 45px;
-  background-color: gainsboro;
+
+.swiper > div.buttons > div.swiper-button-nex {
+  width: 38px;
+  height: 38px;
+  background-color: white;
   border-radius: 50%;
   position: absolute;
   z-index: 999;
-  top: 360px;
-  color: grey;
-  padding-left: 10px;
+  top: 350px;
+  right: 20px;
   outline: 1px solid grey;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-left: 2px;
 }
-div.space{
+
+div.space {
   width: 100%;
   height: 162px;
   margin: 15px 0;
 }
-div.space>div.swiper{
+
+div.space > div.swiper {
   width: 90%;
   height: 100%;
   background-color: white;
   position: relative;
 }
-div.space>div.swiper>div.btnleft{
+
+div.space > div.swiper > div.btnleft {
   width: 40px;
   height: 40px;
   background-color: #ffffff;
@@ -804,21 +1562,24 @@ div.space>div.swiper>div.btnleft{
   border: 1px solid gainsboro;
   z-index: 999;
 }
-div.space>div.swiper>div.btnleft>a{
+
+div.space > div.swiper > div.btnleft > a {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.space>div.swiper>div.btnright>a{
+
+div.space > div.swiper > div.btnright > a {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.space>div.swiper>div.btnright{
+
+div.space > div.swiper > div.btnright {
   width: 40px;
   height: 40px;
   background-color: #ffffff;
@@ -832,12 +1593,14 @@ div.space>div.swiper>div.btnright{
   border: 1px solid gainsboro;
   z-index: 999;
 }
-div.space>div.swiper>div.swiper-wrapper>div.swiper-slide{
+
+div.space > div.swiper > div.swiper-wrapper > div.swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.space>div.swiper>div.swiper-wrapper>div.swiper-slide>div.border{
+
+div.space > div.swiper > div.swiper-wrapper > div.swiper-slide > div.border {
   width: 84px;
   height: 84px;
   border: 2px solid #95499c;
@@ -847,24 +1610,38 @@ div.space>div.swiper>div.swiper-wrapper>div.swiper-slide>div.border{
   justify-content: center;
   margin-bottom: 40px;
 }
-div.space>div.swiper>div.swiper-wrapper>div.swiper-slide>div.border>a{
+
+div.space
+  > div.swiper
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.border
+  > a {
   width: 100px;
   height: 162px;
   display: flex;
   flex-flow: column;
   text-decoration: none;
   font-size: 11px;
-  color: #23254E;
+  color: #23254e;
   gap: 10px;
   align-items: center;
 }
-div.space>div.swiper>div.swiper-wrapper>div.swiper-slide>div.border>a>img{
+
+div.space
+  > div.swiper
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.border
+  > a
+  > img {
   object-fit: cover;
   border-radius: 50%;
   width: 74px;
   height: 74px;
   margin-top: 44px;
 }
+
 div.more {
   width: 100%;
   height: 95px;
@@ -873,6 +1650,7 @@ div.more {
   justify-content: center;
   margin: 15px 0;
 }
+
 div.more > div.container {
   width: 1336px;
   height: inherit;
@@ -881,10 +1659,12 @@ div.more > div.container {
   justify-content: space-evenly;
   align-items: center;
 }
+
 div.more > div.container > div.i1 {
   width: 62px;
   height: 80px;
 }
+
 div.more > div.container > div.i1 > a {
   width: 62px;
   height: 80px;
@@ -893,6 +1673,7 @@ div.more > div.container > div.i1 > a {
   flex-flow: column wrap;
   align-items: center;
 }
+
 div.more > div.container > div.i1 > a > span {
   width: 63px;
   height: 24px;
@@ -902,15 +1683,18 @@ div.more > div.container > div.i1 > a > span {
   text-align: center;
   font-weight: bold;
 }
+
 div.more > div.container > div.i1 > a > img {
   width: 52px;
   height: 52px;
   object-fit: cover;
 }
+
 div.more > div.container > div.i2 {
   width: 52px;
   height: 80px;
 }
+
 div.more > div.container > div.i2 > a {
   width: 52px;
   height: 80px;
@@ -919,6 +1703,7 @@ div.more > div.container > div.i2 > a {
   flex-flow: column wrap;
   align-items: center;
 }
+
 div.more > div.container > div.i2 > a > span {
   width: 52px;
   height: 24px;
@@ -928,15 +1713,18 @@ div.more > div.container > div.i2 > a > span {
   text-align: center;
   font-weight: bold;
 }
+
 div.more > div.container > div.i2 > a > img {
   width: 52px;
   height: 52px;
   object-fit: cover;
 }
+
 div.more > div.container > div.i3 {
   width: 100px;
   height: 80px;
 }
+
 div.more > div.container > div.i3 > a {
   width: 100px;
   height: 80px;
@@ -945,6 +1733,7 @@ div.more > div.container > div.i3 > a {
   flex-flow: column wrap;
   align-items: center;
 }
+
 div.more > div.container > div.i3 > a > span {
   width: 101px;
   height: 24px;
@@ -954,15 +1743,18 @@ div.more > div.container > div.i3 > a > span {
   text-align: center;
   font-weight: bold;
 }
+
 div.more > div.container > div.i3 > a > img {
   width: 52px;
   height: 52px;
   object-fit: cover;
 }
+
 div.more > div.container > div.i4 {
   width: 51px;
   height: 80px;
 }
+
 div.more > div.container > div.i4 > a {
   width: 52px;
   height: 80px;
@@ -971,6 +1763,7 @@ div.more > div.container > div.i4 > a {
   flex-flow: column wrap;
   align-items: center;
 }
+
 div.more > div.container > div.i4 > a > span {
   width: 51px;
   height: 24px;
@@ -980,15 +1773,18 @@ div.more > div.container > div.i4 > a > span {
   text-align: center;
   font-weight: bold;
 }
+
 div.more > div.container > div.i4 > a > img {
   width: 52px;
   height: 52px;
   object-fit: cover;
 }
+
 div.more > div.container > div.i5 {
   width: 89px;
   height: 80px;
 }
+
 div.more > div.container > div.i5 > a {
   width: 89px;
   height: 80px;
@@ -997,6 +1793,7 @@ div.more > div.container > div.i5 > a {
   flex-flow: column wrap;
   align-items: center;
 }
+
 div.more > div.container > div.i5 > a > span {
   width: 91px;
   height: 24px;
@@ -1006,15 +1803,18 @@ div.more > div.container > div.i5 > a > span {
   text-align: center;
   font-weight: bold;
 }
+
 div.more > div.container > div.i5 > a > img {
   width: 52px;
   height: 52px;
   object-fit: cover;
 }
+
 div.more > div.container > div.i6 {
   width: 59px;
   height: 80px;
 }
+
 div.more > div.container > div.i6 > a {
   width: 59px;
   height: 80px;
@@ -1023,6 +1823,7 @@ div.more > div.container > div.i6 > a {
   flex-flow: column wrap;
   align-items: center;
 }
+
 div.more > div.container > div.i6 > a > span {
   width: 61px;
   height: 24px;
@@ -1032,15 +1833,18 @@ div.more > div.container > div.i6 > a > span {
   text-align: center;
   font-weight: bold;
 }
+
 div.more > div.container > div.i6 > a > img {
   width: 52px;
   height: 52px;
   object-fit: cover;
 }
+
 div.more > div.container > div.i7 {
   width: 74px;
   height: 80px;
 }
+
 div.more > div.container > div.i7 > a {
   width: 74px;
   height: 80px;
@@ -1049,6 +1853,7 @@ div.more > div.container > div.i7 > a {
   flex-flow: column wrap;
   align-items: center;
 }
+
 div.more > div.container > div.i7 > a > span {
   width: 75px;
   height: 24px;
@@ -1058,15 +1863,18 @@ div.more > div.container > div.i7 > a > span {
   text-align: center;
   font-weight: bold;
 }
+
 div.more > div.container > div.i7 > a > img {
   width: 52px;
   height: 52px;
   object-fit: cover;
 }
+
 div.more > div.container > div.i8 {
   width: 52px;
   height: 80px;
 }
+
 div.more > div.container > div.i8 > a {
   width: 52px;
   height: 80px;
@@ -1075,6 +1883,7 @@ div.more > div.container > div.i8 > a {
   flex-flow: column wrap;
   align-items: center;
 }
+
 div.more > div.container > div.i8 > a > span {
   width: 52px;
   height: 24px;
@@ -1084,19 +1893,22 @@ div.more > div.container > div.i8 > a > span {
   text-align: center;
   font-weight: bold;
 }
+
 div.more > div.container > div.i8 > a > img {
   width: 52px;
   height: 52px;
   object-fit: cover;
 }
-div.swiper2{
+
+div.swiper2 {
   width: 100%;
   height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.swiper2>div.all{
+
+div.swiper2 > div.all {
   width: 1336px;
   height: 300px;
   display: flex;
@@ -1104,25 +1916,29 @@ div.swiper2>div.all{
   border-radius: 15px;
   padding: 20px 2px;
 }
-div.swiper2>div.all>div.mySwiper3{
+
+div.swiper2 > div.all > div.mySwiper3 {
   position: relative;
   height: 260px !important;
 }
-div.swiper2>div.all>div.mySwiper3>div.btnleft>a{
+
+div.swiper2 > div.all > div.mySwiper3 > div.btnleft > a {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.swiper2>div.all>div.mySwiper3>div.btnright>a{
+
+div.swiper2 > div.all > div.mySwiper3 > div.btnright > a {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.swiper2>div.all>div.mySwiper3>div.btnleft{
+
+div.swiper2 > div.all > div.mySwiper3 > div.btnleft {
   width: 40px;
   height: 40px;
   background-color: #ffffff;
@@ -1136,7 +1952,8 @@ div.swiper2>div.all>div.mySwiper3>div.btnleft{
   border: 1px solid gainsboro;
   z-index: 999;
 }
-div.swiper2>div.all>div.mySwiper3>div.btnright{
+
+div.swiper2 > div.all > div.mySwiper3 > div.btnright {
   width: 40px;
   height: 40px;
   background-color: #ffffff;
@@ -1150,25 +1967,43 @@ div.swiper2>div.all>div.mySwiper3>div.btnright{
   border: 1px solid gainsboro;
   z-index: 999;
 }
-div.swiper2>div.all>div.mySwiper3>div.swiper-wrapper>div.swiper-slide{
+
+div.swiper2 > div.all > div.mySwiper3 > div.swiper-wrapper > div.swiper-slide {
   width: 182px !important;
   height: 260px !important;
 }
-div.swiper2>div.all>div.mySwiper3>div.swiper-wrapper>div.brl{
+
+div.swiper2 > div.all > div.mySwiper3 > div.swiper-wrapper > div.brl {
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
 }
-div.swiper2>div.all>div.mySwiper3>div.swiper-wrapper>div.brr{
+
+div.swiper2 > div.all > div.mySwiper3 > div.swiper-wrapper > div.brr {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-div.swiper2>div.all>div.mySwiper3>div.swiper-wrapper>div.swiper-slide>div.item{
+
+div.swiper2
+  > div.all
+  > div.mySwiper3
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.item {
   width: 182px !important;
   height: 260px !important;
   display: flex;
 }
-div.swiper2>div.all>div.mySwiper3>div.swiper-wrapper>div.swiper-slide>div.item>a{
+
+div.swiper2
+  > div.all
+  > div.mySwiper3
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.item
+  > a {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 182px;
   height: 260px;
   padding: 10px;
@@ -1176,17 +2011,42 @@ div.swiper2>div.all>div.mySwiper3>div.swiper-wrapper>div.swiper-slide>div.item>a
   text-decoration: none;
   color: #3f4064;
 }
-div.swiper2>div.all>div.mySwiper3>div.swiper-wrapper>div.swiper-slide>div.item>a>img{
+
+div.swiper2
+  > div.all
+  > div.mySwiper3
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.item
+  > a
+  > img {
   width: 150px;
   height: 150px;
   object-fit: cover;
 }
-div.swiper2>div.all>div.mySwiper3>div.swiper-wrapper>div.swiper-slide>div.item>a>div.span1{
+
+div.swiper2
+  > div.all
+  > div.mySwiper3
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.item
+  > a
+  > div.span1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-div.swiper2>div.all>div.mySwiper3>div.swiper-wrapper>div.swiper-slide>div.item>a>div.span1>div.price{
+
+div.swiper2
+  > div.all
+  > div.mySwiper3
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.item
+  > a
+  > div.span1
+  > div.price {
   width: 116px;
   height: 34px;
   display: flex;
@@ -1194,11 +2054,30 @@ div.swiper2>div.all>div.mySwiper3>div.swiper-wrapper>div.swiper-slide>div.item>a
   font-size: medium;
   gap: 5px;
 }
-div.swiper2>div.all>div.mySwiper3>div.swiper-wrapper>div.swiper-slide>div.item>a>div.span1>div.price>span{
+
+div.swiper2
+  > div.all
+  > div.mySwiper3
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.item
+  > a
+  > div.span1
+  > div.price
+  > span {
   width: 16px;
   height: 16px;
 }
-div.swiper2>div.all>div.mySwiper3>div.swiper-wrapper>div.swiper-slide>div.item>a>div.span1>div.takhfif{
+
+div.swiper2
+  > div.all
+  > div.mySwiper3
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.item
+  > a
+  > div.span1
+  > div.takhfif {
   width: 34px;
   height: 20px;
   background-color: red;
@@ -1206,7 +2085,15 @@ div.swiper2>div.all>div.mySwiper3>div.swiper-wrapper>div.swiper-slide>div.item>a
   font-size: small;
   color: white;
 }
-div.swiper2>div.all>div.mySwiper3>div.swiper-wrapper>div.swiper-slide>div.item>a>div.khat{
+
+div.swiper2
+  > div.all
+  > div.mySwiper3
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.item
+  > a
+  > div.khat {
   width: 150px;
   height: 26px;
   padding-left: 22px;
@@ -1216,13 +2103,28 @@ div.swiper2>div.all>div.mySwiper3>div.swiper-wrapper>div.swiper-slide>div.item>a
   text-decoration: 1px line-through gainsboro;
   color: gainsboro;
 }
-div.swiper2>div.all>div.mySwiper3>div.swiper-wrapper>div.swiper-slide>div.item>a.sa{
+
+div.swiper2
+  > div.all
+  > div.mySwiper3
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.item
+  > a.sa {
   font-size: medium;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.swiper2>div.all>div.mySwiper3>div.swiper-wrapper>div.swiper-slide>div.item>a.sa>span{
+
+div.swiper2
+  > div.all
+  > div.mySwiper3
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.item
+  > a.sa
+  > span {
   width: 46px;
   height: 46px;
   border: 1px solid #38c7d9;
@@ -1231,17 +2133,28 @@ div.swiper2>div.all>div.mySwiper3>div.swiper-wrapper>div.swiper-slide>div.item>a
   align-items: center;
   justify-content: center;
 }
-div.swiper2>div.all>div.mySwiper3>div.swiper-wrapper>div.swiper-slide>div.item>a.sa>span>img{
+
+div.swiper2
+  > div.all
+  > div.mySwiper3
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.item
+  > a.sa
+  > span
+  > img {
   width: 20px;
   height: 20px;
 }
-div.swiper2>div.all>div.sabet{
+
+div.swiper2 > div.all > div.sabet {
   display: flex;
   width: 173px;
   height: 260px;
   margin: 0 0 0 2px;
 }
-div.swiper2>div.all>div.sabet>a{
+
+div.swiper2 > div.all > div.sabet > a {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -1251,17 +2164,20 @@ div.swiper2>div.all>div.sabet>a{
   color: white;
   gap: 20px;
 }
-div.swiper2>div.all>div.sabet>a>img.img1{
+
+div.swiper2 > div.all > div.sabet > a > img.img1 {
   width: 92px;
   height: 77px;
   object-fit: contain;
 }
-div.swiper2>div.all>div.sabet>a>img.img2{
+
+div.swiper2 > div.all > div.sabet > a > img.img2 {
   width: 145px;
   height: 115px;
   object-fit: contain;
 }
-div.amazing{
+
+div.amazing {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1269,7 +2185,8 @@ div.amazing{
   justify-content: center;
   margin-top: 18px;
 }
-div.amazing>div.items{
+
+div.amazing > div.items {
   width: 1336px;
   height: 110px;
   display: flex;
@@ -1279,13 +2196,15 @@ div.amazing>div.items{
   padding: 0 40px;
   align-items: center;
 }
-div.amazing>div.items>div.right{
+
+div.amazing > div.items > div.right {
   width: 466px;
   height: 62px;
   display: flex;
   align-items: center;
 }
-div.amazing>div.items>div.right>a{
+
+div.amazing > div.items > div.right > a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1294,7 +2213,8 @@ div.amazing>div.items>div.right>a{
   gap: 15px;
   text-decoration: none;
 }
-div.amazing>div.items>div.right>a>div.span{
+
+div.amazing > div.items > div.right > a > div.span {
   width: 110px;
   height: 28px;
   background-color: #39ae00;
@@ -1306,16 +2226,19 @@ div.amazing>div.items>div.right>a>div.span{
   justify-content: center;
   font-weight: bold;
 }
-div.amazing>div.items>div.right>a>img.img1{
+
+div.amazing > div.items > div.right > a > img.img1 {
   width: 66px;
   height: 62px;
   object-fit: cover;
 }
-div.amazing>div.items>div.right>a>img.img2{
+
+div.amazing > div.items > div.right > a > img.img2 {
   width: 250px;
   height: 28px;
 }
-div.amazing>div.items>div.left{
+
+div.amazing > div.items > div.left {
   width: 636px;
   height: 74px;
   padding: 0 16px 0 0;
@@ -1323,14 +2246,16 @@ div.amazing>div.items>div.left{
   align-items: center;
   margin-right: 150px;
 }
-div.amazing>div.items>div.left>a{
+
+div.amazing > div.items > div.left > a {
   width: 144px;
   height: 50px;
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-div.amazing>div.items>div.left>a>div.more{
+
+div.amazing > div.items > div.left > a > div.more {
   width: 144px;
   height: 50px;
   padding: 12px 20px;
@@ -1343,37 +2268,43 @@ div.amazing>div.items>div.left>a>div.more{
   padding-left: 15px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
-div.amazing>div.items>div.left>a>div.more>img{
+
+div.amazing > div.items > div.left > a > div.more > img {
   width: 20px;
   height: 20px;
   object-fit: cover;
   margin-right: 5px;
 }
-div.amazing>div.items>div.left>a>div.more>span{
+
+div.amazing > div.items > div.left > a > div.more > span {
   color: #39ae00;
   font-size: 12px;
 }
-div.amazing>div.items>div.left>div.t6{
+
+div.amazing > div.items > div.left > div.t6 {
   width: 492px;
   height: 74px;
   display: flex;
   align-items: center;
 }
-div.amazing>div.items>div.left>div.t6 div.item{
+
+div.amazing > div.items > div.left > div.t6 div.item {
   width: 74px;
   height: 74px;
   margin: 0 0 16px 8px;
   padding: 8px;
   position: relative;
 }
-div.amazing>div.items>div.left>div.t6>div.item>a>img{
+
+div.amazing > div.items > div.left > div.t6 > div.item > a > img {
   object-fit: cover;
   width: 70px;
   height: 70px;
   border-radius: 40px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
-div.amazing>div.items>div.left>div.t6>div.item>div.red{
+
+div.amazing > div.items > div.left > div.t6 > div.item > div.red {
   width: 34px;
   height: 20px;
   background-color: red;
@@ -1388,7 +2319,8 @@ div.amazing>div.items>div.left>div.t6>div.item>div.red{
   align-items: center;
   justify-content: center;
 }
-div.fp{
+
+div.fp {
   width: 100%;
   height: 241px;
   display: flex;
@@ -1396,7 +2328,8 @@ div.fp{
   justify-content: center;
   margin-top: 18px;
 }
-div.fp>div.items{
+
+div.fp > div.items {
   width: 1336px;
   height: 241px;
   align-items: center;
@@ -1404,14 +2337,16 @@ div.fp>div.items{
   border-radius: 15px;
   display: flex;
 }
-div.fp>div.items>a>img{
+
+div.fp > div.items > a > img {
   width: 322px;
   height: 240px;
   object-fit: cover;
   border-radius: 15px;
   margin-top: 8px;
 }
-div.daste{
+
+div.daste {
   margin-top: 18px;
   width: 100%;
   height: 60px;
@@ -1419,11 +2354,13 @@ div.daste{
   align-items: center;
   justify-content: center;
 }
-div.daste>h2{
+
+div.daste > h2 {
   font-size: 21px;
   font-weight: 400;
 }
-div.icons2{
+
+div.icons2 {
   width: 100%;
   height: 300px;
   margin-top: 17px;
@@ -1432,7 +2369,8 @@ div.icons2{
   justify-content: center;
   margin-bottom: 40px;
 }
-div.icons2>div.dastebandi{
+
+div.icons2 > div.dastebandi {
   width: 1304px;
   height: 300px;
   display: flex;
@@ -1440,14 +2378,16 @@ div.icons2>div.dastebandi{
   justify-content: center;
   flex-flow: row wrap;
 }
-div.icons2>div.dastebandi>div.item{
+
+div.icons2 > div.dastebandi > div.item {
   width: 186px;
   height: 134px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.icons2>div.dastebandi>div.item>a{
+
+div.icons2 > div.dastebandi > div.item > a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1456,18 +2396,21 @@ div.icons2>div.dastebandi>div.item>a{
   align-items: center;
   text-decoration: none;
 }
-div.icons2>div.dastebandi>div.item>a>span{
+
+div.icons2 > div.dastebandi > div.item > a > span {
   height: 26px;
   color: #0c0c0c;
   font-size: 12px;
   margin: 8px 0 0;
 }
-div.icons2>div.dastebandi>div.item>a>img{
+
+div.icons2 > div.dastebandi > div.item > a > img {
   object-fit: cover;
   width: 100px;
   height: 100px;
 }
-div.img2{
+
+div.img2 {
   width: 100%;
   height: 264;
   display: flex;
@@ -1475,39 +2418,46 @@ div.img2{
   justify-content: center;
   margin-top: 20px;
 }
-div.img2>div.items{
+
+div.img2 > div.items {
   width: 1336px;
   height: 264px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-div.img2>div.items>div.item{
+
+div.img2 > div.items > div.item {
   width: 660px;
   height: 264px;
 }
-div.img2>div.items>div.item>a{
+
+div.img2 > div.items > div.item > a {
   width: 100%;
   height: 100%;
 }
-div.img2>div.items>div.item>a>img{
+
+div.img2 > div.items > div.item > a > img {
   width: 660px;
   height: 264px;
   object-fit: cover;
   border-radius: 15px;
 }
-div.pishnahad{
+
+div.pishnahad {
   width: 100%;
   height: 76px;
   padding: 16px 0;
   margin-top: 18px;
   text-align: center;
 }
-div.pishnahad>h2{
+
+div.pishnahad > h2 {
   font-weight: 200;
   font-size: 22px;
 }
-div.container{
+
+div.container {
   width: 100%;
   height: 311px;
   display: flex;
@@ -1515,7 +2465,8 @@ div.container{
   justify-content: center;
   margin-top: 10px;
 }
-div.container>div.items{
+
+div.container > div.items {
   width: 1336px;
   height: 311px;
   display: flex;
@@ -1523,18 +2474,21 @@ div.container>div.items{
   border-radius: 15px;
   flex-flow: column;
 }
-div.container>div.items>div.items1{
+
+div.container > div.items > div.items1 {
   width: 100%;
   height: 50%;
   display: flex;
   border-bottom: 1px solid gainsboro;
 }
-div.container>div.items>div.items2{
+
+div.container > div.items > div.items2 {
   width: 100%;
   height: 50%;
   display: flex;
 }
-div.container>div.items>div.items1>div.nbr{
+
+div.container > div.items > div.items1 > div.nbr {
   width: 189.72px;
   height: 154.09px;
   padding: 16px 4px;
@@ -1543,7 +2497,8 @@ div.container>div.items>div.items1>div.nbr{
   justify-content: center;
   border-right: unset !important;
 }
-div.container>div.items>div.items1>div.nbr>a{
+
+div.container > div.items > div.items1 > div.nbr > a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1552,17 +2507,20 @@ div.container>div.items>div.items1>div.nbr>a{
   flex-flow: column;
   justify-content: center;
 }
-div.container>div.items>div.items1>div.nbr>a>span{
+
+div.container > div.items > div.items1 > div.nbr > a > span {
   margin-top: 10px;
   color: #0c0c0c;
   font-size: 14px;
 }
-div.container>div.items>div.items1>div.nbr>a>div.border>img{
+
+div.container > div.items > div.items1 > div.nbr > a > div.border > img {
   width: 60px;
   height: 60px;
   object-fit: cover;
 }
-div.container>div.items>div.items1>div.nbr>a>div.border{
+
+div.container > div.items > div.items1 > div.nbr > a > div.border {
   width: 84px;
   height: 84px;
   display: flex;
@@ -1571,7 +2529,8 @@ div.container>div.items>div.items1>div.nbr>a>div.border{
   background-color: #f0f0f1;
   border-radius: 50%;
 }
-div.container>div.items>div.items1>div.item{
+
+div.container > div.items > div.items1 > div.item {
   width: 189.72px;
   height: 154.09px;
   padding: 16px 4px;
@@ -1580,7 +2539,8 @@ div.container>div.items>div.items1>div.item{
   justify-content: center;
   border-right: 1px solid gainsboro;
 }
-div.container>div.items>div.items1>div.item>a{
+
+div.container > div.items > div.items1 > div.item > a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1589,17 +2549,20 @@ div.container>div.items>div.items1>div.item>a{
   flex-flow: column;
   justify-content: center;
 }
-div.container>div.items>div.items1>div.item>a>span{
+
+div.container > div.items > div.items1 > div.item > a > span {
   margin-top: 10px;
   color: #0c0c0c;
   font-size: 14px;
 }
-div.container>div.items>div.items1>div.item>a>div.border>img{
+
+div.container > div.items > div.items1 > div.item > a > div.border > img {
   width: 60px;
   height: 60px;
   object-fit: cover;
 }
-div.container>div.items>div.items1>div.item>a>div.border{
+
+div.container > div.items > div.items1 > div.item > a > div.border {
   width: 84px;
   height: 84px;
   display: flex;
@@ -1608,7 +2571,8 @@ div.container>div.items>div.items1>div.item>a>div.border{
   background-color: #f0f0f1;
   border-radius: 50%;
 }
-div.container>div.items>div.items1>div.nbr{
+
+div.container > div.items > div.items1 > div.nbr {
   width: 189.72px;
   height: 154.09px;
   padding: 16px 4px;
@@ -1617,7 +2581,8 @@ div.container>div.items>div.items1>div.nbr{
   justify-content: center;
   border-right: unset !important;
 }
-div.container>div.items>div.items1>div.nbr>a{
+
+div.container > div.items > div.items1 > div.nbr > a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1626,17 +2591,20 @@ div.container>div.items>div.items1>div.nbr>a{
   flex-flow: column;
   justify-content: center;
 }
-div.container>div.items>div.items1>div.nbr>a>span{
+
+div.container > div.items > div.items1 > div.nbr > a > span {
   margin-top: 10px;
   color: #0c0c0c;
   font-size: 14px;
 }
-div.container>div.items>div.items1>div.nbr>a>div.border>img{
+
+div.container > div.items > div.items1 > div.nbr > a > div.border > img {
   width: 60px;
   height: 60px;
   object-fit: cover;
 }
-div.container>div.items>div.items1>div.nbr>a>div.border{
+
+div.container > div.items > div.items1 > div.nbr > a > div.border {
   width: 84px;
   height: 84px;
   display: flex;
@@ -1645,7 +2613,8 @@ div.container>div.items>div.items1>div.nbr>a>div.border{
   background-color: #f0f0f1;
   border-radius: 50%;
 }
-div.container>div.items>div.items2>div.item{
+
+div.container > div.items > div.items2 > div.item {
   width: 189.72px;
   height: 154.09px;
   padding: 16px 4px;
@@ -1654,7 +2623,8 @@ div.container>div.items>div.items2>div.item{
   justify-content: center;
   border-right: 1px solid gainsboro;
 }
-div.container>div.items>div.items2>div.item>a{
+
+div.container > div.items > div.items2 > div.item > a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1663,17 +2633,20 @@ div.container>div.items>div.items2>div.item>a{
   flex-flow: column;
   justify-content: center;
 }
-div.container>div.items>div.items2>div.item>a>span{
+
+div.container > div.items > div.items2 > div.item > a > span {
   margin-top: 10px;
   color: #0c0c0c;
   font-size: 14px;
 }
-div.container>div.items>div.items2>div.item>a>div.border>img{
+
+div.container > div.items > div.items2 > div.item > a > div.border > img {
   width: 60px;
   height: 60px;
   object-fit: cover;
 }
-div.container>div.items>div.items2>div.item>a>div.border{
+
+div.container > div.items > div.items2 > div.item > a > div.border {
   width: 84px;
   height: 84px;
   display: flex;
@@ -1682,7 +2655,8 @@ div.container>div.items>div.items2>div.item>a>div.border{
   background-color: #f0f0f1;
   border-radius: 50%;
 }
-div.container>div.items>div.items2>div.nbr{
+
+div.container > div.items > div.items2 > div.nbr {
   width: 189.72px;
   height: 154.09px;
   padding: 16px 4px;
@@ -1691,7 +2665,8 @@ div.container>div.items>div.items2>div.nbr{
   justify-content: center;
   border-right: unset !important;
 }
-div.container>div.items>div.items2>div.nbr>a{
+
+div.container > div.items > div.items2 > div.nbr > a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1700,17 +2675,20 @@ div.container>div.items>div.items2>div.nbr>a{
   flex-flow: column;
   justify-content: center;
 }
-div.container>div.items>div.items2>div.nbr>a>span{
+
+div.container > div.items > div.items2 > div.nbr > a > span {
   margin-top: 10px;
   color: #0c0c0c;
   font-size: 14px;
 }
-div.container>div.items>div.items2>div.nbr>a>div.border>img{
+
+div.container > div.items > div.items2 > div.nbr > a > div.border > img {
   width: 60px;
   height: 60px;
   object-fit: cover;
 }
-div.container>div.items>div.items2>div.nbr>a>div.border{
+
+div.container > div.items > div.items2 > div.nbr > a > div.border {
   width: 84px;
   height: 84px;
   display: flex;
@@ -1719,7 +2697,8 @@ div.container>div.items>div.items2>div.nbr>a>div.border{
   background-color: #f0f0f1;
   border-radius: 50%;
 }
-div.brands{
+
+div.brands {
   width: 100%;
   height: 224px;
   display: flex;
@@ -1727,7 +2706,8 @@ div.brands{
   justify-content: center;
   margin-top: 20px;
 }
-div.brands>div.brands1{
+
+div.brands > div.brands1 {
   width: 1336px;
   height: 224px;
   display: flex;
@@ -1736,32 +2716,37 @@ div.brands>div.brands1{
   padding: 24px 0;
   flex-flow: column;
 }
-div.brands>div.brands1>div.head{
+
+div.brands > div.brands1 > div.head {
   width: 100%;
   height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.brands>div.brands1>div.head>h2{
+
+div.brands > div.brands1 > div.head > h2 {
   font-size: 21px;
   font-weight: 400;
   margin-right: 8px;
   color: #0c0c0c;
 }
-div.brands>div.brands1>div.head>img{
+
+div.brands > div.brands1 > div.head > img {
   width: 24px;
   height: 24px;
   object-fit: cover;
 }
-div.brands>div.brands1>div.items{
+
+div.brands > div.brands1 > div.items {
   width: 1334px;
   height: 118px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.brands>div.brands1>div.items>div.mySwiper4>div.btnleft{
+
+div.brands > div.brands1 > div.items > div.mySwiper4 > div.btnleft {
   width: 40px;
   height: 40px;
   background-color: #ffffff;
@@ -1775,21 +2760,24 @@ div.brands>div.brands1>div.items>div.mySwiper4>div.btnleft{
   border: 1px solid gainsboro;
   z-index: 999;
 }
-div.brands>div.brands1>div.items>div.mySwiper4>div.btnleft>a{
+
+div.brands > div.brands1 > div.items > div.mySwiper4 > div.btnleft > a {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.brands>div.brands1>div.items>div.mySwiper4>div.btnright>a{
+
+div.brands > div.brands1 > div.items > div.mySwiper4 > div.btnright > a {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.brands>div.brands1>div.items>div.mySwiper4>div.btnright{
+
+div.brands > div.brands1 > div.items > div.mySwiper4 > div.btnright {
   width: 40px;
   height: 40px;
   background-color: #ffffff;
@@ -1803,26 +2791,48 @@ div.brands>div.brands1>div.items>div.mySwiper4>div.btnright{
   border: 1px solid gainsboro;
   z-index: 999;
 }
-div.brands>div.brands1>div.items>div.mySwiper4{
+
+div.brands > div.brands1 > div.items > div.mySwiper4 {
   width: 100%;
   height: 100%;
   margin-top: 20px;
 }
-div.brands>div.brands1>div.items>div.mySwiper4>div.swiper-wrapper>div.nbl{
+
+div.brands
+  > div.brands1
+  > div.items
+  > div.mySwiper4
+  > div.swiper-wrapper
+  > div.nbl {
   border-left: unset !important;
 }
-div.brands>div.brands1>div.items>div.mySwiper4>div.swiper-wrapper>div.swiper-slide{
+
+div.brands
+  > div.brands1
+  > div.items
+  > div.mySwiper4
+  > div.swiper-wrapper
+  > div.swiper-slide {
   width: 142px;
   height: 118px;
   padding: 4px 16px;
   border-left: 1px solid gainsboro;
 }
-div.brands>div.brands1>div.items>div.mySwiper4>div.swiper-wrapper>div.swiper-slide>a>img{
+
+div.brands
+  > div.brands1
+  > div.items
+  > div.mySwiper4
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > a
+  > img {
   width: 110px;
   height: 110px;
   object-fit: contain;
 }
-div.con4{
+
+div.con4 {
   width: 100%;
   height: 418px;
   display: flex;
@@ -1830,17 +2840,20 @@ div.con4{
   justify-content: center;
   margin-top: 20px;
 }
-div.con4>div.items{
+
+div.con4 > div.items {
   width: 1336px;
   height: 418px;
   border: 1px solid gainsboro;
   border-radius: 15px;
   display: flex;
 }
-div.con4>div.items>div.nbr{
+
+div.con4 > div.items > div.nbr {
   border-left: unset !important;
 }
-div.con4>div.items>div.con{
+
+div.con4 > div.items > div.con {
   width: 333px;
   height: 416px;
   display: flex;
@@ -1850,49 +2863,59 @@ div.con4>div.items>div.con{
   direction: rtl;
   border-left: 1px solid gainsboro;
 }
-div.con4>div.items>div.con>div.head1{
+
+div.con4 > div.items > div.con > div.head1 {
   width: 293px;
   height: 65px;
 }
-div.con4>div.items>div.con>div.head1>h4{
+
+div.con4 > div.items > div.con > div.head1 > h4 {
   font-size: 16px;
-  color: #23254E;
+  color: #23254e;
 }
-div.con4>div.items>div.con>div.head1>p{
+
+div.con4 > div.items > div.con > div.head1 > p {
   font-size: 11px;
-  color: #81858B;
+  color: #81858b;
   margin-top: 5px;
 }
-div.con4>div.items>div.con>div.items{
+
+div.con4 > div.items > div.con > div.items {
   width: 293px;
   height: 293px;
   display: flex;
   flex-flow: column wrap;
 }
-div.con4>div.items>div.con>div.items>div.nlb{
+
+div.con4 > div.items > div.con > div.items > div.nlb {
   border-left: unset !important;
 }
-div.con4>div.items>div.con>div.items>div.ntb{
+
+div.con4 > div.items > div.con > div.items > div.ntb {
   border-top: unset !important;
 }
-div.con4>div.items>div.con>div.items>div.item{
+
+div.con4 > div.items > div.con > div.items > div.item {
   width: 146.5px;
   height: 146px;
   border-top: 1px solid gainsboro;
   border-left: 1px solid gainsboro;
 }
-div.con4>div.items>div.con>div.items>div.item>a{
+
+div.con4 > div.items > div.con > div.items > div.item > a {
   width: 130px;
   height: 130px;
   display: flex;
 }
-div.con4>div.items>div.con>div.items>div.item>a>img{
+
+div.con4 > div.items > div.con > div.items > div.item > a > img {
   width: 130px;
   height: 130px;
   object-fit: cover;
   margin-top: 7px;
 }
-div.con4>div.items>div.con>div.all{
+
+div.con4 > div.items > div.con > div.all {
   width: 293px;
   height: 26px;
   margin: 4px 0 12px;
@@ -1900,24 +2923,28 @@ div.con4>div.items>div.con>div.all{
   align-items: center;
   justify-content: center;
 }
-div.con4>div.items>div.con>div.all>a{
+
+div.con4 > div.items > div.con > div.all > a {
   width: 58px;
   height: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #19BFD3;
+  color: #19bfd3;
 }
-div.con4>div.items>div.con>div.all>a>span{
+
+div.con4 > div.items > div.con > div.all > a > span {
   font-size: 12px;
 }
-div.con4>div.items>div.con>div.all>a>img{
+
+div.con4 > div.items > div.con > div.all > a > img {
   width: 18px;
   height: 18px;
   object-fit: contain;
 }
-div.digiplus{
+
+div.digiplus {
   width: 100%;
   height: 411px;
   display: flex;
@@ -1925,10 +2952,11 @@ div.digiplus{
   justify-content: center;
   margin-top: 16px;
 }
-div.digiplus>div.cont{
+
+div.digiplus > div.cont {
   width: 1336px;
   height: 387px;
-  background-color: #941B80;
+  background-color: #941b80;
   margin: 24px 0 0;
   padding: 16px;
   border-radius: 17px;
@@ -1937,7 +2965,8 @@ div.digiplus>div.cont{
   justify-content: center;
   gap: 5px;
 }
-div.digiplus>div.cont>div.right{
+
+div.digiplus > div.cont > div.right {
   margin: 0 0 0 12px;
   padding: 24px 0 0;
   width: 416px;
@@ -1946,14 +2975,16 @@ div.digiplus>div.cont>div.right{
   flex-flow: column;
   position: relative;
 }
-div.digiplus>div.cont>div.right>img{
+
+div.digiplus > div.cont > div.right > img {
   width: 380px;
   height: 335px;
   object-fit: contain;
   position: absolute;
   top: 50px;
 }
-div.digiplus>div.cont>div.right>div.items{
+
+div.digiplus > div.cont > div.right > div.items {
   width: 416px;
   height: 110px;
   padding: 0 24px 0 0;
@@ -1963,16 +2994,19 @@ div.digiplus>div.cont>div.right>div.items{
   justify-content: space-between;
   gap: 10px;
 }
-div.digiplus>div.cont>div.right>div.items>span{
+
+div.digiplus > div.cont > div.right > div.items > span {
   color: white;
   font-size: 14px;
   margin: 4 0;
 }
-div.digiplus>div.cont>div.right>div.items>a.logo{
+
+div.digiplus > div.cont > div.right > div.items > a.logo {
   width: 128px;
   height: 32px;
 }
-div.digiplus>div.cont>div.right>div.items>a.btn{
+
+div.digiplus > div.cont > div.right > div.items > a.btn {
   width: 106px;
   height: 40px;
   display: flex;
@@ -1987,12 +3021,14 @@ div.digiplus>div.cont>div.right>div.items>a.btn{
   font-size: 12px;
   z-index: 999;
 }
-div.digiplus>div.cont>div.right>div.items>a.btn>img{
+
+div.digiplus > div.cont > div.right > div.items > a.btn > img {
   width: 24px;
   height: 24px;
   object-fit: contain;
 }
-div.digiplus>div.cont>div.left{
+
+div.digiplus > div.cont > div.left {
   padding: 0 16px;
   width: 868px;
   height: 355px;
@@ -2001,7 +3037,8 @@ div.digiplus>div.cont>div.left{
   display: flex;
   flex-flow: column;
 }
-div.digiplus>div.cont>div.left>div.header{
+
+div.digiplus > div.cont > div.left > div.header {
   width: 836px;
   height: 66px;
   display: flex;
@@ -2009,35 +3046,41 @@ div.digiplus>div.cont>div.left>div.header{
   justify-content: space-between;
   padding: 16px 0;
 }
-div.digiplus>div.cont>div.left>div.header>a{
+
+div.digiplus > div.cont > div.left > div.header > a {
   text-decoration: none;
   font-size: 12px;
-  color: #B12BA4;
+  color: #b12ba4;
   display: flex;
   align-items: center;
 }
-div.digiplus>div.cont>div.left>div.header>a>img{
+
+div.digiplus > div.cont > div.left > div.header > a > img {
   width: 24px;
   height: 24px;
   object-fit: contain;
 }
-div.digiplus>div.cont>div.left>div.header>div.ersal{
+
+div.digiplus > div.cont > div.left > div.header > div.ersal {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.digiplus>div.cont>div.left>div.header>div.ersal>img{
+
+div.digiplus > div.cont > div.left > div.header > div.ersal > img {
   width: 24px;
   height: 24px;
   object-fit: contain;
 }
-div.digiplus>div.cont>div.left>div.header>div.ersal>h4{
+
+div.digiplus > div.cont > div.left > div.header > div.ersal > h4 {
   font-size: 16px;
   margin: 0 8px 0 0;
   color: #0c0c0c;
   font-weight: 500;
 }
-div.digiplus>div.cont>div.left>div.bodi{
+
+div.digiplus > div.cont > div.left > div.bodi {
   width: 836px;
   height: 280px;
   display: flex;
@@ -2046,13 +3089,15 @@ div.digiplus>div.cont>div.left>div.bodi{
   justify-content: center;
   flex-flow: row wrap;
 }
-div.digiplus>div.cont>div.left>div.bodi>a>img{
+
+div.digiplus > div.cont > div.left > div.bodi > a > img {
   width: 116px;
   height: 116px;
   object-fit: contain;
   margin-right: 23px;
 }
-div.digiclub{
+
+div.digiclub {
   width: 100%;
   height: 96px;
   display: flex;
@@ -2060,7 +3105,8 @@ div.digiclub{
   justify-content: center;
   margin-top: 18px;
 }
-div.digiclub>div.dgclub{
+
+div.digiclub > div.dgclub {
   width: 1336px;
   height: 88px;
   padding: 12px 16px;
@@ -2071,90 +3117,106 @@ div.digiclub>div.dgclub{
   border-radius: 15px;
   justify-content: space-between;
 }
-div.digiclub>div.dgclub>div.left{
+
+div.digiclub > div.dgclub > div.left {
   width: 978px;
   height: 64px;
   display: flex;
   align-items: center;
 }
-div.digiclub>div.dgclub>div.right{
+
+div.digiclub > div.dgclub > div.right {
   width: 119px;
   height: 33px;
   display: flex;
   margin-right: 25px;
 }
-div.digiclub>div.dgclub>div.right>a{
+
+div.digiclub > div.dgclub > div.right > a {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.digiclub>div.dgclub>div.right>a>img{
+
+div.digiclub > div.dgclub > div.right > a > img {
   width: 119px;
   height: 33px;
   object-fit: cover;
 }
-div.digiclub>div.dgclub>div.left>div.item1{
+
+div.digiclub > div.dgclub > div.left > div.item1 {
   width: 257px;
   height: 64px;
   display: flex;
   background-color: white;
   margin-right: 5px;
 }
-div.digiclub>div.dgclub>div.left>div.lef{
+
+div.digiclub > div.dgclub > div.left > div.lef {
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
 }
-div.digiclub>div.dgclub>div.left>div.righ{
+
+div.digiclub > div.dgclub > div.left > div.righ {
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
 }
-div.digiclub>div.dgclub>div.left>div.item1>a{
+
+div.digiclub > div.dgclub > div.left > div.item1 > a {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-div.digiclub>div.dgclub>div.left>div.item1>a>img{
+
+div.digiclub > div.dgclub > div.left > div.item1 > a > img {
   width: 168px;
   height: 60px;
   object-fit: cover;
   border-radius: 15px;
 }
-div.digiclub>div.dgclub>div.left>div.item1>a>span{
+
+div.digiclub > div.dgclub > div.left > div.item1 > a > span {
   font-size: 12px;
   color: #0c0c0c;
   display: flex;
   gap: 5px;
 }
-div.digiclub>div.dgclub>div.left>div.item1>a>span>img{
+
+div.digiclub > div.dgclub > div.left > div.item1 > a > span > img {
   width: 20px;
   height: 20px;
   object-fit: contain;
 }
-div.digiclub>div.dgclub>div.left>div.emtiaz{
+
+div.digiclub > div.dgclub > div.left > div.emtiaz {
   width: 107px;
   height: 44px;
   margin: 0 28px;
   display: flex;
   align-items: center;
 }
-div.digiclub>div.dgclub>div.left>div.emtiaz>span{
+
+div.digiclub > div.dgclub > div.left > div.emtiaz > span {
   font-size: 11px;
   color: #ffffff;
 }
-div.digiclub>div.dgclub>div.left>div.emtiaz>h2{
+
+div.digiclub > div.dgclub > div.left > div.emtiaz > h2 {
   color: #ffffff;
   font-weight: 400;
   margin-right: 5px;
 }
-div.digiclub>div.dgclub>div.left>div.emtiaz>img{
+
+div.digiclub > div.dgclub > div.left > div.emtiaz > img {
   width: 24px;
   height: 24px;
 }
-div.porforosh{
+
+div.porforosh {
   width: 100%;
   height: 404px;
   display: flex;
@@ -2162,7 +3224,7 @@ div.porforosh{
   justify-content: center;
   margin-top: 18px;
 }
-div.porforosh>div.con{
+div.porforosh > div.con {
   width: 1336px;
   height: 404px;
   display: flex;
@@ -2172,7 +3234,8 @@ div.porforosh>div.con{
   flex-flow: column;
   justify-content: space-between;
 }
-div.porforosh>div.con>div.header{
+
+div.porforosh > div.con > div.header {
   width: 100%;
   height: 44px;
   display: flex;
@@ -2180,13 +3243,15 @@ div.porforosh>div.con>div.header{
   align-items: center;
   justify-content: space-between;
 }
-div.porforosh>div.con>div.header>a{
+
+div.porforosh > div.con > div.header > a {
   text-decoration: none;
   font-size: 14px;
-  color: #19BFD3;
+  color: #19bfd3;
   font-weight: 600;
 }
-div.porforosh>div.con>div.header>div.middle{
+
+div.porforosh > div.con > div.header > div.middle {
   width: 199px;
   height: 44px;
   margin-right: 43%;
@@ -2194,25 +3259,30 @@ div.porforosh>div.con>div.header>div.middle{
   align-items: center;
   justify-content: center;
 }
-div.porforosh>div.con>div.header>div.mr{
+
+div.porforosh > div.con > div.header > div.mr {
   width: 350px;
   margin-right: 35%;
 }
-div.porforosh>div.con>div.header>div.mr>img{
+
+div.porforosh > div.con > div.header > div.mr > img {
   margin-right: 70px;
 }
-div.porforosh>div.con>div.header>div.middle>p{
+
+div.porforosh > div.con > div.header > div.middle > p {
   width: 300px;
   font-size: 21px;
   color: #0c0c0c;
 }
-div.porforosh>div.con>div.bodi{
+
+div.porforosh > div.con > div.bodi {
   width: 1318px;
   height: 298px;
   display: flex;
   padding: 10px;
 }
-div.porforosh>div.con>div.bodi>div.mySwiper5>div.btnleft{
+
+div.porforosh > div.con > div.bodi > div.mySwiper5 > div.btnleft {
   width: 40px;
   height: 40px;
   background-color: #ffffff;
@@ -2226,21 +3296,24 @@ div.porforosh>div.con>div.bodi>div.mySwiper5>div.btnleft{
   border: 1px solid gainsboro;
   z-index: 999;
 }
-div.porforosh>div.con>div.bodi>div.mySwiper5>div.btnleft>a{
+
+div.porforosh > div.con > div.bodi > div.mySwiper5 > div.btnleft > a {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.porforosh>div.con>div.bodi>div.mySwiper5>div.btnright>a{
+
+div.porforosh > div.con > div.bodi > div.mySwiper5 > div.btnright > a {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.porforosh>div.con>div.bodi>div.mySwiper5>div.btnright{
+
+div.porforosh > div.con > div.bodi > div.mySwiper5 > div.btnright {
   width: 40px;
   height: 40px;
   background-color: #ffffff;
@@ -2254,24 +3327,39 @@ div.porforosh>div.con>div.bodi>div.mySwiper5>div.btnright{
   border: 1px solid gainsboro;
   z-index: 999;
 }
-div.porforosh>div.con>div.bodi>div.mySwiper5{
+
+div.porforosh > div.con > div.bodi > div.mySwiper5 {
   width: 1318px !important;
   height: 298px !important;
   display: flex;
 }
-div.porforosh>div.con>div.bodi>div.mySwiper5>div.swiper-wrapper{
+
+div.porforosh > div.con > div.bodi > div.mySwiper5 > div.swiper-wrapper {
   width: 1318px !important;
   height: 298px !important;
   display: flex;
 }
-div.porforosh>div.con>div.bodi>div.mySwiper5>div.swiper-wrapper>div.swiper-slide{
+
+div.porforosh
+  > div.con
+  > div.bodi
+  > div.mySwiper5
+  > div.swiper-wrapper
+  > div.swiper-slide {
   width: 315px !important;
   height: 298px !important;
   display: flex;
   flex-flow: column;
   gap: 5px;
 }
-div.porforosh>div.con>div.bodi>div.mySwiper5>div.swiper-wrapper>div.swiper-slide>div.item1{
+
+div.porforosh
+  > div.con
+  > div.bodi
+  > div.mySwiper5
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.item1 {
   width: 314px;
   height: 86px;
   display: flex;
@@ -2279,10 +3367,25 @@ div.porforosh>div.con>div.bodi>div.mySwiper5>div.swiper-wrapper>div.swiper-slide
   direction: rtl;
   border-bottom: 1px solid gainsboro;
 }
-div.porforosh>div.con>div.bodi>div.mySwiper5>div.swiper-wrapper>div.swiper-slide>div.nbb{
+
+div.porforosh
+  > div.con
+  > div.bodi
+  > div.mySwiper5
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.nbb {
   border-bottom: unset !important;
 }
-div.porforosh>div.con>div.bodi>div.mySwiper5>div.swiper-wrapper>div.swiper-slide>div.item1>a{
+
+div.porforosh
+  > div.con
+  > div.bodi
+  > div.mySwiper5
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.item1
+  > a {
   display: flex;
   width: 100%;
   height: 100%;
@@ -2290,24 +3393,52 @@ div.porforosh>div.con>div.bodi>div.mySwiper5>div.swiper-wrapper>div.swiper-slide
   text-decoration: none;
   gap: 10px;
 }
-div.porforosh>div.con>div.bodi>div.mySwiper5>div.swiper-wrapper>div.swiper-slide>div.item1>a>img{
-  width: 86px;
-  height: 86px;
+
+div.porforosh
+  > div.con
+  > div.bodi
+  > div.mySwiper5
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.item1
+  > a
+  > img {
+  width: 84px;
+  height: 84px;
   object-fit: contain;
 }
-div.porforosh>div.con>div.bodi>div.mySwiper5>div.swiper-wrapper>div.swiper-slide>div.item1>a>p{
+
+div.porforosh
+  > div.con
+  > div.bodi
+  > div.mySwiper5
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.item1
+  > a
+  > p {
   font-size: 12px;
   color: #3f4064;
   line-height: 20px;
   text-align: center;
   display: flex;
 }
-div.porforosh>div.con>div.bodi>div.mySwiper5>div.swiper-wrapper>div.swiper-slide>div.item1>a>span{
+
+div.porforosh
+  > div.con
+  > div.bodi
+  > div.mySwiper5
+  > div.swiper-wrapper
+  > div.swiper-slide
+  > div.item1
+  > a
+  > span {
   font-size: 26px;
   color: #19bfd3;
   margin: 0 0 0 12px;
 }
-div.off{
+
+div.off {
   width: 100%;
   height: 167px;
   display: flex;
@@ -2315,21 +3446,25 @@ div.off{
   justify-content: center;
   margin-top: 18px;
 }
-div.off>div.shast{
+
+div.off > div.shast {
   width: 1336px;
   height: 167px;
   border-radius: 15px;
 }
-div.off>div.shast>a>img{
+
+div.off > div.shast > a > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
 }
-div.montakhab>a{
+
+div.montakhab > a {
   text-decoration: none;
 }
-div.montakhab{
+
+div.montakhab {
   width: 100%;
   height: 847px;
   display: flex;
@@ -2337,7 +3472,8 @@ div.montakhab{
   justify-content: center;
   margin-top: 18px;
 }
-div.montakhab>a>div.haraj{
+
+div.montakhab > a > div.haraj {
   width: 1336px;
   height: 847px;
   border: 1px solid gainsboro;
@@ -2346,7 +3482,8 @@ div.montakhab>a>div.haraj{
   padding: 0 12px;
   flex-flow: column;
 }
-div.montakhab>a>div.haraj>div.header{
+
+div.montakhab > a > div.haraj > div.header {
   width: 1310px;
   height: 76px;
   margin: 0 0 8px;
@@ -2355,25 +3492,29 @@ div.montakhab>a>div.haraj>div.header{
   align-items: center;
   justify-content: center;
 }
-div.montakhab>a>div.haraj>div.header>h3{
+
+div.montakhab > a > div.haraj > div.header > h3 {
   font-size: 21px;
   margin: 0 8px 0 0;
   color: #000000;
   font-weight: 400;
 }
-div.montakhab>a>div.haraj>div.bodi{
+
+div.montakhab > a > div.haraj > div.bodi {
   width: 1310px;
   height: 760px;
   display: flex;
   flex-flow: column;
   justify-content: center;
 }
-div.montakhab>a>div.haraj>div.bodi>div.row{
+
+div.montakhab > a > div.haraj > div.bodi > div.row {
   width: 100%;
   height: 260px;
   display: flex;
 }
-div.montakhab>a>div.haraj>div.bodi>div.row>div.item{
+
+div.montakhab > a > div.haraj > div.bodi > div.row > div.item {
   width: 218px;
   height: 100%;
   padding: 12px 8px;
@@ -2382,26 +3523,45 @@ div.montakhab>a>div.haraj>div.bodi>div.row>div.item{
   flex-flow: column;
   align-items: center;
 }
-div.montakhab>a>div.haraj>div.bodi>div.row>div.item>img{
+
+div.montakhab > a > div.haraj > div.bodi > div.row > div.item > img {
   width: 150px;
   height: 150px;
   object-fit: cover;
 }
-div.montakhab>a>div.haraj>div.bodi>div.row>div.item>div.price{
+
+div.montakhab > a > div.haraj > div.bodi > div.row > div.item > div.price {
   width: 202px;
   height: 33px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-div.montakhab>a>div.haraj>div.bodi>div.row>div.item>div.price>div.right{
+
+div.montakhab
+  > a
+  > div.haraj
+  > div.bodi
+  > div.row
+  > div.item
+  > div.price
+  > div.right {
   width: 34px;
   height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.montakhab>a>div.haraj>div.bodi>div.row>div.item>div.price>div.right>span{
+
+div.montakhab
+  > a
+  > div.haraj
+  > div.bodi
+  > div.row
+  > div.item
+  > div.price
+  > div.right
+  > span {
   width: 34px;
   height: 20px;
   background-color: #d32f2f;
@@ -2410,23 +3570,50 @@ div.montakhab>a>div.haraj>div.bodi>div.row>div.item>div.price>div.right>span{
   border-radius: 40%;
   text-align: center;
 }
-div.montakhab>a>div.haraj>div.bodi>div.row>div.item>div.price>div.left{
+
+div.montakhab
+  > a
+  > div.haraj
+  > div.bodi
+  > div.row
+  > div.item
+  > div.price
+  > div.left {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 3px;
 }
-div.montakhab>a>div.haraj>div.bodi>div.row>div.item>div.price>div.left>img{
+
+div.montakhab
+  > a
+  > div.haraj
+  > div.bodi
+  > div.row
+  > div.item
+  > div.price
+  > div.left
+  > img {
   width: 16px;
   height: 16px;
   object-fit: contain;
 }
-div.montakhab>a>div.haraj>div.bodi>div.row>div.item>div.price>div.left>p{
+
+div.montakhab
+  > a
+  > div.haraj
+  > div.bodi
+  > div.row
+  > div.item
+  > div.price
+  > div.left
+  > p {
   font-size: 16px;
   color: #3f4064;
   font-weight: bold;
 }
-div.montakhab>a>div.haraj>div.bodi>div.row>div.item>div.tkhf{
+
+div.montakhab > a > div.haraj > div.bodi > div.row > div.item > div.tkhf {
   width: 202px;
   height: 26px;
   display: flex;
@@ -2435,14 +3622,17 @@ div.montakhab>a>div.haraj>div.bodi>div.row>div.item>div.tkhf{
   color: #c0c2c5;
   text-decoration: line-through 1px solid;
 }
-div.montakhab>a>div.haraj>div.bodi>div.tbb{
+
+div.montakhab > a > div.haraj > div.bodi > div.tbb {
   border-bottom: 1px solid gainsboro;
   border-top: 1px solid gainsboro;
 }
-div.montakhab>a>div.haraj>div.bodi>div.row>div.nrb{
+
+div.montakhab > a > div.haraj > div.bodi > div.row > div.nrb {
   border-right: unset !important;
 }
-div.reading{
+
+div.reading {
   width: 100%;
   height: 345px;
   display: flex;
@@ -2450,13 +3640,15 @@ div.reading{
   justify-content: center;
   margin-top: 18px;
 }
-div.reading>div.khandani{
+
+div.reading > div.khandani {
   width: 1336px;
   height: 345px;
   display: flex;
   flex-flow: column;
 }
-div.reading>div.khandani>div.header{
+
+div.reading > div.khandani > div.header {
   width: 100%;
   height: 66px;
   padding: 16px 20px;
@@ -2464,43 +3656,49 @@ div.reading>div.khandani>div.header{
   align-items: center;
   justify-content: space-between;
 }
-div.reading>div.khandani>div.header>a{
+
+div.reading > div.khandani > div.header > a {
   width: 169px;
   height: 26px;
   display: flex;
   text-decoration: none;
-  color: #19BFD3;
+  color: #19bfd3;
   align-items: center;
   justify-content: center;
   font-size: 12px;
 }
-div.reading>div.khandani>div.header>a>img{
+
+div.reading > div.khandani > div.header > a > img {
   width: 18px;
   height: 18px;
   object-fit: contain;
 }
-div.reading>div.khandani>div.header>span{
+
+div.reading > div.khandani > div.header > span {
   width: 70px;
   height: 34px;
   display: flex;
   text-align: center;
   font-weight: 600;
 }
-div.reading>div.khandani>div.bodi{
+
+div.reading > div.khandani > div.bodi {
   width: 100%;
   height: 280px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-div.reading>div.khandani>div.bodi>div.item{
+
+div.reading > div.khandani > div.bodi > div.item {
   width: 325px;
   height: 280px;
   display: flex;
   border: 1px solid gainsboro;
   border-radius: 15px;
 }
-div.reading>div.khandani>div.bodi>div.item>a{
+
+div.reading > div.khandani > div.bodi > div.item > a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -2508,19 +3706,23 @@ div.reading>div.khandani>div.bodi>div.item>a{
   text-decoration: none;
   direction: rtl;
 }
-div.reading>div.khandani>div.bodi>div.item>a>p{
+
+div.reading > div.khandani > div.bodi > div.item > a > p {
   font-size: 12px;
   color: #0c0c0c;
   margin: 8px 0 12px;
   padding: 0 16px;
 }
-div.reading>div.khandani>div.bodi>div.item>a>img{
+
+div.reading > div.khandani > div.bodi > div.item > a > img {
   width: 323px;
   height: 201px;
   object-fit: cover;
-  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-div.tah{
+
+div.tah {
   width: 100%;
   height: 965px;
   display: flex;
@@ -2530,13 +3732,15 @@ div.tah{
   flex-flow: column;
   border-top: 1px solid gainsboro;
 }
-div.tah>div.header1{
-  width: 1538px;
+
+div.tah > div.header1 {
+  width: 100%;
   height: 40px;
   display: flex;
   justify-content: space-between;
 }
-div.tah>div.header1>a{
+
+div.tah > div.header1 > a {
   width: 138px;
   height: 40px;
   padding: 8px 16px;
@@ -2551,23 +3755,27 @@ div.tah>div.header1>a{
   font-weight: bold;
   gap: 5px;
 }
-div.tah>div.header1>img{
+
+div.tah > div.header1 > img {
   width: 113px;
   height: 30px;
   object-fit: cover;
 }
-div.tah>div.header2{
-  width: 1538px;
+
+div.tah > div.header2 {
+  width: 100%;
   height: 26px;
   margin-top: 12px;
   display: flex;
   direction: rtl;
 }
-div.tah>div.header2>p{
+
+div.tah > div.header2 > p {
   font-size: 12px;
   color: #3f4064;
 }
-div.tah>div.header2>div.khat{
+
+div.tah > div.header2 > div.khat {
   width: 43px;
   height: 23px;
   padding: 0 20px;
@@ -2577,22 +3785,25 @@ div.tah>div.header2>div.khat{
   align-items: center;
   justify-content: center;
 }
-div.tah>div.options{
-  width: 1538px;
+
+div.tah > div.options {
+  width: 100%;
   height: 104px;
   margin: 32px 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.tah>div.options>div.item{
+
+div.tah > div.options > div.item {
   width: 291px;
   height: 104px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.tah>div.options>div.item>a{
+
+div.tah > div.options > div.item > a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -2603,110 +3814,128 @@ div.tah>div.options>div.item>a{
   font-size: 11px;
   color: #3f4064;
 }
-div.tah>div.footer{
-  width: 1538px;
+
+div.tah > div.footer {
+  width: 100%;
   height: 270px;
   margin-bottom: 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-div.tah>div.footer>div.item1{
+
+div.tah > div.footer > div.item1 {
   width: 380px;
   height: 270px;
   display: flex;
   flex-flow: column;
   direction: rtl;
 }
-div.tah>div.footer>div.item1>p{
+
+div.tah > div.footer > div.item1 > p {
   font-size: 16px;
   color: #3f4064;
   margin: 0 0 8px;
 }
-div.tah>div.footer>div.item1>a{
+
+div.tah > div.footer > div.item1 > a {
   text-decoration: none;
-  color: #81858B;
+  color: #81858b;
   font-size: 14px;
   margin: 0 0 8px;
 }
-div.tah>div.footer>div.item2{
+
+div.tah > div.footer > div.item2 {
   width: 395px;
   height: 270px;
   display: flex;
   flex-flow: column;
   direction: rtl;
 }
-div.tah>div.footer>div.item2>p{
+
+div.tah > div.footer > div.item2 > p {
   font-size: 16px;
   color: #3f4064;
   margin: 0 0 8px;
 }
-div.tah>div.footer>div.item2>a{
+
+div.tah > div.footer > div.item2 > a {
   text-decoration: none;
-  color: #81858B;
+  color: #81858b;
   font-size: 14px;
   margin: 0 0 8px;
 }
-div.tah>div.footer>div.item3{
+
+div.tah > div.footer > div.item3 {
   width: 400px;
   height: 270px;
   display: flex;
   flex-flow: column;
   direction: rtl;
 }
-div.tah>div.footer>div.item3>p{
+
+div.tah > div.footer > div.item3 > p {
   font-size: 16px;
   color: #3f4064;
   margin: 0 0 8px;
 }
-div.tah>div.footer>div.item3>a{
+
+div.tah > div.footer > div.item3 > a {
   text-decoration: none;
-  color: #81858B;
+  color: #81858b;
   font-size: 14px;
   margin: 0 0 8px;
 }
-div.tah>div.footer>div.item4{
+
+div.tah > div.footer > div.item4 {
   width: 323px;
   height: 270px;
   display: flex;
   flex-flow: column;
   direction: rtl;
 }
-div.tah>div.footer>div.item4>p.p2{
+
+div.tah > div.footer > div.item4 > p.p2 {
   font-size: 15px;
   margin: 0 0 12px;
   color: #3f4064;
   margin-top: 17px;
   font-weight: bold;
 }
-div.tah>div.footer>div.item4>p{
+
+div.tah > div.footer > div.item4 > p {
   font-size: 16px;
   color: #3f4064;
   margin: 0 0 8px;
 }
-div.tah>div.footer>div.item4>a{
+
+div.tah > div.footer > div.item4 > a {
   text-decoration: none;
-  color: #81858B;
+  color: #81858b;
   font-size: 14px;
   margin: 0 0 8px;
 }
-div.tah>div.footer>div.item4>div.items{
+
+div.tah > div.footer > div.item4 > div.items {
   width: 323px;
   height: 40px;
   display: flex;
   align-items: center;
   gap: 30px;
 }
-div.tah>div.footer>div.item4>div.items>img{
+
+div.tah > div.footer > div.item4 > div.items > img {
   width: 40px;
   height: 40px;
   object-fit: contain;
 }
-div.tah>div.footer>div.item4>div.email{
+
+div.tah > div.footer > div.item4 > div.email {
   display: flex;
   justify-content: space-between;
 }
-div.tah>div.footer>div.item4>div.email>input[type="email"]{
+
+div.tah > div.footer > div.item4 > div.email > input[type="email"] {
   width: 261px;
   height: 48px;
   background-color: #f0f0f1;
@@ -2714,7 +3943,8 @@ div.tah>div.footer>div.item4>div.email>input[type="email"]{
   border: unset;
   border-radius: 10px;
 }
-div.tah>div.footer>div.item4>div.email>a{
+
+div.tah > div.footer > div.item4 > div.email > a {
   width: 54px;
   height: 48px;
   border-radius: 10px;
@@ -2726,8 +3956,9 @@ div.tah>div.footer>div.item4>div.email>a{
   font-size: 14px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
-div.tah>div.app{
-  width: 1538px;
+
+div.tah > div.app {
+  width: 100%;
   height: 76px;
   background-color: #3c4b6d;
   display: flex;
@@ -2737,21 +3968,24 @@ div.tah>div.app{
   padding: 8px 20px;
   margin: 0 0 28px;
 }
-div.tah>div.app>div.left{
+
+div.tah > div.app > div.left {
   width: 1170px;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-div.tah>div.app>div.left>a{
+
+div.tah > div.app > div.left > a {
   width: 142px;
   height: 44px;
   display: flex;
   border-radius: 7px;
   margin: 8px;
 }
-div.tah>div.app>div.left>a.l{
+
+div.tah > div.app > div.left > a.l {
   width: 44px;
   height: 44px;
   display: flex;
@@ -2760,45 +3994,52 @@ div.tah>div.app>div.left>a.l{
   background-color: #ffffff;
   margin-right: 16px;
 }
-div.tah>div.app>div.left>a.l>img{
+
+div.tah > div.app > div.left > a.l > img {
   width: 42px;
   height: 44px;
   object-fit: contain;
 }
-div.tah>div.app>div.right{
-  width: 288px;
+
+div.tah > div.app > div.right {
+  width: 338px;
   height: 44px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-div.tah>div.app>div.right>img{
+
+div.tah > div.app > div.right > img {
   width: 44px;
   height: 44px;
   object-fit: cover;
 }
-div.tah>div.app>div.right>h3{
+
+div.tah > div.app > div.right > h3 {
   font-size: 21px;
   margin: 0 16px 0 0;
   color: #ffffff;
   font-weight: 400;
 }
-div.tah>div.tozihat{
-  width: 1538px;
+
+div.tah > div.tozihat {
+  width: 100%;
   height: 224px;
   padding: 32px 0;
   display: flex;
   border-top: 1px solid gainsboro;
   border-bottom: 1px solid gainsboro;
 }
-div.tah>div.tozihat>div.left{
+
+div.tah > div.tozihat > div.left {
   width: 379px;
   height: 109px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-div.tah>div.tozihat>div.left>div.namad{
+
+div.tah > div.tozihat > div.left > div.namad {
   width: 109px;
   height: 109px;
   margin: 0 8px 0 0;
@@ -2807,63 +4048,74 @@ div.tah>div.tozihat>div.left>div.namad{
   border: 1px solid gainsboro;
   border-radius: 7px;
 }
-div.tah>div.tozihat>div.left>div.namad>a{
+
+div.tah > div.tozihat > div.left > div.namad > a {
   width: 100%;
   height: 100%;
   display: flex;
 }
-div.tah>div.tozihat>div.left>div.namad>a>img{
+
+div.tah > div.tozihat > div.left > div.namad > a > img {
   width: 75px;
   height: 75px;
   object-fit: contain;
 }
-div.tah>div.tozihat>div.right{
+
+div.tah > div.tozihat > div.right {
   width: 1119px;
   height: 159px;
   display: flex;
   flex-flow: column;
   direction: rtl;
 }
-div.tah>div.tozihat>div.right>h1{
+
+div.tah > div.tozihat > div.right > h1 {
   font-size: 21px;
   color: #62666d;
 }
-div.tah>div.tozihat>div.right>p{
+
+div.tah > div.tozihat > div.right > p {
   font-size: 12px;
-  color: #81858B;
+  color: #81858b;
   line-height: 25px;
   margin-top: 10px;
 }
-div.tah>div.copyright{
-  width: 1538px;
+
+div.tah > div.copyright {
+  width: 100%;
   height: 89px;
   padding: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-div.tah>div.copyright>p{
+
+div.tah > div.copyright > p {
   font-size: 11px;
-  color: #81858B;
+  color: #81858b;
 }
-div.comps{
+
+div.comps {
   width: 100%;
   height: 160px;
   display: flex;
   flex-flow: column;
   margin-top: 30px;
 }
-div.comps>div.radif1{
+
+div.comps > div.radif1 {
   width: 100%;
   height: 80px;
   display: flex;
 }
-div.comps>div.radif2{
+
+div.comps > div.radif2 {
   width: 100%;
   height: 80px;
   display: flex;
 }
-div.comps>div.radif2>a{
+
+div.comps > div.radif2 > a {
   width: 14.3%;
   height: 80px;
   display: flex;
@@ -2873,13 +4125,16 @@ div.comps>div.radif2>a{
   justify-content: center;
   border-right: 1px solid gainsboro;
 }
-div.comps>div.radif1>a.nbr{
+
+div.comps > div.radif1 > a.nbr {
   border-right: unset;
 }
-div.comps>div.radif2>a.nbr{
+
+div.comps > div.radif2 > a.nbr {
   border-right: unset;
 }
-div.comps>div.radif1>a{
+
+div.comps > div.radif1 > a {
   width: 12.5%;
   height: 80px;
   display: flex;
@@ -2890,82 +4145,98 @@ div.comps>div.radif1>a{
   border-bottom: 1px solid gainsboro;
   border-right: 1px solid gainsboro;
 }
-div.comps>div.radif1>a>img.img1{
+
+div.comps > div.radif1 > a > img.img1 {
   width: 125px;
   height: 20px;
   object-fit: contain;
 }
-div.comps>div.radif1>a>img.img2{
+
+div.comps > div.radif1 > a > img.img2 {
   width: 76.25px;
   height: 20px;
   object-fit: contain;
 }
-div.comps>div.radif1>a>img.img3{
+
+div.comps > div.radif1 > a > img.img3 {
   width: 82.5px;
   height: 20px;
   object-fit: contain;
 }
-div.comps>div.radif1>a>img.img4{
+
+div.comps > div.radif1 > a > img.img4 {
   width: 76.63px;
   height: 20px;
   object-fit: contain;
 }
-div.comps>div.radif1>a>img.img5{
+
+div.comps > div.radif1 > a > img.img5 {
   width: 78px;
   height: 20px;
   object-fit: contain;
 }
-div.comps>div.radif1>a>img.img6{
+
+div.comps > div.radif1 > a > img.img6 {
   width: 132.3px;
   height: 20px;
   object-fit: contain;
 }
-div.comps>div.radif1>a>img.img7{
+
+div.comps > div.radif1 > a > img.img7 {
   width: 75.28px;
   height: 20px;
   object-fit: contain;
 }
-div.comps>div.radif1>a>img.img8{
+
+div.comps > div.radif1 > a > img.img8 {
   width: 107.05px;
   height: 20px;
   object-fit: contain;
 }
-div.comps>div.radif2>a>img.img9{
+
+div.comps > div.radif2 > a > img.img9 {
   width: 138.75px;
   height: 20px;
   object-fit: contain;
 }
-div.comps>div.radif2>a>img.img10{
+
+div.comps > div.radif2 > a > img.img10 {
   width: 153.75px;
   height: 20px;
   object-fit: contain;
 }
-div.comps>div.radif2>a>img.img11{
+
+div.comps > div.radif2 > a > img.img11 {
   width: 160px;
   height: 20px;
   object-fit: contain;
 }
-div.comps>div.radif2>a>img.img12{
+
+div.comps > div.radif2 > a > img.img12 {
   width: 57.5px;
   height: 20px;
   object-fit: contain;
 }
-div.comps>div.radif2>a>img.img13{
+
+div.comps > div.radif2 > a > img.img13 {
   width: 83.52px;
   height: 20px;
   object-fit: contain;
 }
-div.comps>div.radif2>a>img.img14{
+
+div.comps > div.radif2 > a > img.img14 {
   width: 121.25px;
   height: 20px;
   object-fit: contain;
 }
-div.comps>div.radif2>a>img.img15{
+
+div.comps > div.radif2 > a > img.img15 {
   width: 85px;
   height: 20px;
   object-fit: contain;
 }
-div.emad{
+
+div.emad {
   width: 187px;
   margin: 0 auto;
   font-size: 10px;
